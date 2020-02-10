@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.spacediscoinc.communicator" version="0.1.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>communicator</name>
+    <description>
+    </description>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <splash density="land-hdpi" height="480" src="res/screen/android/screen-hdpi-landscape.png" width="800" />
+        <splash density="land-ldpi" height="200" src="res/screen/android/screen-ldpi-landscape.png" width="320" />
+        <splash density="land-mdpi" height="360" src="res/screen/android/screen-mdpi-landscape.png" width="480" />
+        <splash density="land-xhdpi" height="720" src="res/screen/android/screen-xhdpi-landscape.png" width="1280" />
+        <splash density="land-xxhdpi" height="960" src="res/screen/android/screen-xxhdpi-landscape.png" width="1600" />
+        <splash density="land-mdpi" height="1536" src="res/screen/android/screen-qxga-landscape.png" width="2048" />
+        <splash density="port-hdpi" height="800" src="res/screen/android/screen-hdpi-portrait.png" width="480" />
+        <splash density="port-ldpi" height="320" src="res/screen/android/screen-ldpi-portrait.png" width="200" />
+        <splash density="port-mdpi" height="480" src="res/screen/android/screen-mdpi-portrait.png" width="360" />
+        <splash density="port-xhdpi" height="1280" src="res/screen/android/screen-xhdpi-portrait.png" width="720" />
+        <splash density="port-xxhdpi" height="1600" src="res/screen/android/screen-xxhdpi-portrait.png" width="960" />
+        <splash density="port-mdpi" height="2048" src="res/screen/android/screen-qxga-portrait.png" width="1536" />
+        <icon density="ldpi" src="res/icon/android/ldpi.png" />
+        <icon density="mdpi" src="res/icon/android/mdpi.png" />
+        <icon density="hdpi" src="res/icon/android/hdpi.png" />
+        <icon density="xhdpi" src="res/icon/android/xhdpi.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <splash height="480" src="res/screen/ios/Default~iphone.png" width="320" />
+        <splash height="960" src="res/screen/ios/Default@2x~iphone.png" width="640" />
+        <splash height="1024" src="res/screen/ios/Default-Portrait~ipad.png" width="768" />
+        <splash height="2048" src="res/screen/ios/Default-Portrait@2x~ipad.png" width="1536" />
+        <splash height="768" src="res/screen/ios/Default-Landscape~ipad.png" width="1024" />
+        <splash height="1536" src="res/screen/ios/Default-Landscape@2x~ipad.png" width="2048" />
+        <splash height="1136" src="res/screen/ios/Default-568h@2x~iphone.png" width="640" />
+        <splash height="1334" src="res/screen/ios/Default-667h.png" width="750" />
+        <splash height="2208" src="res/screen/ios/Default-736h.png" width="1242" />
+        <splash height="1242" src="res/screen/ios/Default-Landscape-736h.png" width="2208" />
+        <icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
+        <icon height="60" src="res/icon/ios/icon-60.png" width="60" />
+        <icon height="120" src="res/icon/ios/icon-60@2x.png" width="120" />
+        <icon height="76" src="res/icon/ios/icon-76.png" width="76" />
+        <icon height="152" src="res/icon/ios/icon-76@2x.png" width="152" />
+        <icon height="40" src="res/icon/ios/icon-40.png" width="40" />
+        <icon height="80" src="res/icon/ios/icon-40@2x.png" width="80" />
+        <icon height="57" src="res/icon/ios/icon.png" width="57" />
+        <icon height="114" src="res/icon/ios/icon@2x.png" width="114" />
+        <icon height="72" src="res/icon/ios/icon-72.png" width="72" />
+        <icon height="144" src="res/icon/ios/icon-72@2x.png" width="144" />
+        <icon height="167" src="res/icon/ios/icon-167.png" width="167" />
+        <icon height="29" src="res/icon/ios/icon-Small.png" width="29" />
+        <icon height="58" src="res/icon/ios/icon-Small@2x.png" width="58" />
+        <icon height="87" src="res/icon/ios/icon-Small@3x.png" width="87" />
+        <icon height="50" src="res/icon/ios/icon-50.png" width="50" />
+        <icon height="100" src="res/icon/ios/icon-50@2x.png" width="100" />
+        <icon height="167" src="res/icon/ios/icon-83.5@2x.png" width="167" />
+        <icon height="1024" src="res/icon/ios/icon-1024.png" width="1024" />
+        <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
+            <string>To scan barcodes</string>
+        </edit-config>
+    </platform>
+    <engine name="ios" spec="~4.5.5" />
+    <engine name="android" spec="~6.3.0" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+</widget>
