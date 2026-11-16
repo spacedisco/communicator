@@ -1,50 +1,60 @@
-# communicator
+<p align="center">
+  <img src="docs/assets/space-disco-logo.png" width="260" alt="Space Disco logo">
+</p>
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+<h1 align="center">communicator</h1>
 
-## Prerequisites
+<p align="center"><strong>Space Disco Communicator & Discotronic Flight Assistant: an Ember + Cordova app shell.</strong></p>
 
-You will need the following things properly installed on your computer.
+<p align="center"><em>"We are going to space and we are bringing a disco."</em> 🚀🪩</p>
 
-* [Git](https://git-scm.com/)
-* [Node.js](https://nodejs.org/) (with NPM)
-* [Ember CLI](https://ember-cli.com/)
-* [Google Chrome](https://google.com/chrome/)
+> **Status:** Scaffold only. · **Visibility:** public · **Language:** JavaScript · **History:** 2020-01-16 → 2020-02-09, 2 commits
 
-## Installation
+## 🪩 What this is
 
-* `git clone <repository-url>` this repository
-* `cd communicator`
-* `npm install`
+Ember CLI 2.15 app packaged with corber (Cordova) for iOS, with Space Disco icons. The only UI is the heading "Space Disco / Communicator / & Discotronic Flight Assitant". It was the start of a crew-member mobile app.
 
-## Running / Development
+## 🎛️ Stack
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+- Ember CLI 2.15
+- corber + Cordova (iOS icons and config)
+- QUnit tests (generated)
 
-### Code Generators
+## 🗺️ Layout
 
-Make use of the many generators for code, try `ember help generate` for more details
+| Path | What it does |
+| --- | --- |
+| `app/templates/application.hbs` | the single screen |
+| `corber/` | Cordova project and icons |
+| `config/` | Ember environment |
 
-### Running Tests
+## 🚀 Launch sequence (local setup)
 
-* `ember test`
-* `ember test --server`
+```bash
+npm install
+npx ember serve   # http://localhost:4200
+```
 
-### Building
+## 🛸 Deploy
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+None. 7 open Dependabot PRs (bumps for qs, lodash, js-yaml, shell-quote, sha.js, on-headers, pbkdf2) were opened between Jun 2025 and Feb 2026.
 
-### Deploying
+## 🔌 Integrations
 
-Specify what it takes to deploy your app.
+None.
 
-## Further Reading / Useful Links
+## 🧪 Tests & CI
 
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+Generated QUnit tests only.
+
+## 🛰️ Current state
+
+Scaffold only. Not deployable as-is on modern Node. 7 open Dependabot PRs.
+
+## 🌌 How it connects
+
+Companion idea for the Space Disco crew-member community (SMS check-in and boarding passes).
+
+---
+
+<p align="center"><sub>Space Disco · Orbital Lounge and House Music Club · Deep, Minimal, Tech House &amp; Soulful, Groovy, Funky, Disco House.<br>Documentation refreshed November 2026 from a read of the code and history.</sub></p>
